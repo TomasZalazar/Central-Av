@@ -1,15 +1,7 @@
-function openMenu() {
-    let menu = document.getElementById('menu');
-    if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-    } else {
-        menu.classList.add('hidden');
-    }
-}
-
-document.getElementById('dropdownButton').addEventListener('click', function() {
-    document.getElementById('dropdownMenu').classList.toggle('hidden');
-});
+function Menu(e){
+    let list = document.querySelector('ul');
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+  }
 
 
 
