@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 
-
-.bg-img{
-    background-image: url(../public/img/HeaderIMG.jpg);
-    
+.bg-img {
+    position: relative;
+    background: url(../public/img/HeaderIMG.jpg) center/cover no-repeat;  
 }
-
