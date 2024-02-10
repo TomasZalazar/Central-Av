@@ -1,9 +1,15 @@
-function Menu(e){
-    let list = document.querySelector('ul');
-    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-  }
 
 
-  menu()
 
 
+
+function toggleMenu() {
+  // Selecciona el elemento <ul> en el DOM
+  let list = document.querySelector('ul');
+
+  // Toggle de la clase 'top-[80px]': si la tiene, la quita; si no la tiene, la añade.
+  list.classList.toggle('top-[80px]');
+
+  // Toggle de la clase 'opacity-100': si la tiene, la quita; si no la tiene, la añade.
+  list.classList.toggle('opacity-100');
+}
