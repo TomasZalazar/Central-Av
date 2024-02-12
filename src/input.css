@@ -7,3 +7,22 @@
     position: relative;
     background: url(../public/img/HeaderIMG.jpg) center/cover no-repeat;  
 }
+
+.bg-img-2 {
+    position: relative;
+    background: url(../public/img/CentralAv/CostadoCAv.jpg) center/cover no-repeat;  
+}
+.bg-img-3 {
+    position: relative;
+    background: url(../public/img/SanNicolas/frenteSanNicolas.jpg) center/cover no-repeat;  
+}
+
+
+
+
+@keyframes show {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+}
