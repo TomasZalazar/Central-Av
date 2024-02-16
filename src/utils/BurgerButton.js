@@ -13,3 +13,7 @@ function toggleMenu() {
   // Toggle de la clase 'opacity-100': si la tiene, la quita; si no la tiene, la añade.
   list.classList.toggle('opacity-100');
 }
+
+
+
+

@@ -626,6 +626,10 @@ video {
   z-index: 1000;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -694,20 +698,12 @@ video {
   height: 8rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-\[450px\] {
   height: 450px;
 }
 
-.h-\[1000px\] {
-  height: 1000px;
-}
-
-.h-96 {
-  height: 24rem;
+.h-screen {
+  height: 100vh;
 }
 
 .w-20 {
@@ -722,12 +718,20 @@ video {
   width: 2rem;
 }
 
+.w-\[238px\] {
+  width: 238px;
+}
+
 .w-\[250px\] {
   width: 250px;
 }
 
 .w-\[280px\] {
   width: 280px;
+}
+
+.w-\[381px\] {
+  width: 381px;
 }
 
 .w-full {
@@ -762,39 +766,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.scroll-my-1 {
-  scroll-margin-top: 0.25rem;
-  scroll-margin-bottom: 0.25rem;
-}
-
-.-scroll-my-10 {
-  scroll-margin-top: -2.5rem;
-  scroll-margin-bottom: -2.5rem;
-}
-
-.-scroll-my-2 {
-  scroll-margin-top: -0.5rem;
-  scroll-margin-bottom: -0.5rem;
-}
-
-.-scroll-my-28 {
-  scroll-margin-top: -7rem;
-  scroll-margin-bottom: -7rem;
-}
-
-.scroll-my-28 {
-  scroll-margin-top: 7rem;
-  scroll-margin-bottom: 7rem;
-}
-
-.scroll-mt-80 {
-  scroll-margin-top: 20rem;
-}
-
-.scroll-mt-1 {
-  scroll-margin-top: 0.25rem;
 }
 
 .scroll-mt-40 {
@@ -886,6 +857,10 @@ video {
 
 .p-\[50px\] {
   padding: 50px;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-16 {
@@ -1047,7 +1022,7 @@ video {
 
 .bg-img-2 {
   position: relative;
-  background: url(../public/img/CentralAv/CostadoCAv.jpg) center/cover no-repeat;
+  background: url(../public/img/CentralAv/frente.jpg) center/cover no-repeat;
 }
 
 .bg-img-3 {
@@ -1232,6 +1207,129 @@ video {
   }
 }
 
+/* carrousel central av */
+
+.slide-container{
+  position: relative;
+  height: 350px;
+  border: 3px solid #ede6d6;
+  box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
+}
+
+.slide-container .slides{
+  width: 100%;
+  height: calc(100% - 40px);
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-container .slides img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide-container .slides img:not(.active){
+  top: 0;
+  left: -100%;
+}
+
+span.next, span.prev{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 14px;
+  color: #eee;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.5s;
+  border-radius: 3px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+span.next{
+  right: 20px;
+}
+
+span.prev{
+  left: 20px;
+}
+
+span.next:hover, span.prev:hover{
+  background-color: #ede6d6;
+  opacity: 0.8;
+  color: #222;
+}
+
+.dotsContainer{
+  position: absolute;
+  bottom: 5px;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dotsContainer .dot{
+  width: 15px;
+  height: 15px;
+  margin: 0px 2px;
+  border: 3px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.dotsContainer .active{
+  background-color: #555;
+}
+
+@keyframes next1{
+  from{
+    left: 0%
+  }
+
+  to{
+    left: -100%;
+  }
+}
+
+@keyframes next2{
+  from{
+    left: 100%
+  }
+
+  to{
+    left: 0%;
+  }
+}
+
+@keyframes prev1{
+  from{
+    left: 0%
+  }
+
+  to{
+    left: 100%;
+  }
+}
+
+@keyframes prev2{
+  from{
+    left: -100%
+  }
+
+  to{
+    left: 0%;
+  }
+}
+
 .hover\:text-\[\#FFE5A8\]:hover {
   --tw-text-opacity: 1;
   color: rgb(255 229 168 / var(--tw-text-opacity));
@@ -1298,36 +1396,16 @@ video {
     width: 631px;
   }
 
+  .md\:w-\[700px\] {
+    width: 700px;
+  }
+
+  .md\:w-\[800px\] {
+    width: 800px;
+  }
+
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:scroll-mt-80 {
-    scroll-margin-top: 20rem;
-  }
-
-  .md\:scroll-mt-5 {
-    scroll-margin-top: 1.25rem;
-  }
-
-  .md\:scroll-mt-20 {
-    scroll-margin-top: 5rem;
-  }
-
-  .md\:scroll-mt-40 {
-    scroll-margin-top: 10rem;
-  }
-
-  .md\:scroll-mt-64 {
-    scroll-margin-top: 16rem;
-  }
-
-  .md\:scroll-mt-32 {
-    scroll-margin-top: 8rem;
-  }
-
-  .md\:scroll-mt-4 {
-    scroll-margin-top: 1rem;
   }
 
   .md\:items-center {
@@ -1349,6 +1427,11 @@ video {
 
   .md\:pl-0 {
     padding-left: 0px;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-4xl {
