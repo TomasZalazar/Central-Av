@@ -66,40 +66,20 @@
             </div>
         </div>
     </header>
-    <main >
-        <section class=" container mx-auto p-12">
-            <div class="slide-container m-auto w-[381px] md:w-[800px]">
-	
-                <div class="slides">
-                    <img src="../../public/img/CentralAv/IMG-20240120-WA0012.jpg" class="active">
-                    <img src="../../public/img/CentralAv/living2.jpg">
-                    <img src="../../public/img/CentralAv/IMG-20240120-WA0007.jpg">
-                    <img src="../../public/img/CentralAv/IMG-20240120-WA0010.jpg">
-                    <img src="../../public/img/CentralAv/habitacion.jpg">
-                    <img src="../../public/img/SanNicolas/baño1.jpg" alt="">
-                    <img src="../../public/img/SanNicolas/baño1.jpg" alt="">
-                    <img src="../../public/img/SanNicolas/baño1.jpg" alt="">
-                    <img src="../../public/img/SanNicolas/baño1.jpg" alt="">
-                </div>
-            
-                <div class="buttons">
-                    <span class="next">&#10095;</span>
-                    <span class="prev">&#10094;</span>
-                </div>
-            
-                <div class="dotsContainer">
-                    <div class="dot active" attr='0' onclick="switchImage(this)"></div>
-                    <div class="dot" attr='1' onclick="switchImage(this)"></div>
-                    <div class="dot" attr='2' onclick="switchImage(this)"></div>
-                    <div class="dot" attr='3' onclick="switchImage(this)"></div>
-                    <div class="dot" attr='4' onclick="switchImage(this)"></div>
-                </div>
-            
+    <main class="flex items-center justify-center ">
+        <section class="container mx-auto pt-16 relative ">
+            <div class="gallery " id="imageGallery">
+                <img src="../../public/img/CentralAv/comedor.jpg" alt="Comedor" class="w-full h-auto  shadow-md cursor-pointer">
+                <img src="../../public/img/CentralAv/habitacion.jpg" alt="Habitación" class="w-full h-auto  shadow-md cursor-pointer hidden">
+                <img src="../../public/img/CentralAv/living2.jpg" alt="Living" class="w-full h-auto  shadow-md cursor-pointer hidden">
+                <img src="../../public/img/CentralAv/header-123.jpg" alt="Living" class="w-full h-auto  shadow-md cursor-pointer hidden">
+                <img src="../../public/img/CentralAv/frentecocina.jpg" alt="Living" class="w-full h-auto  shadow-md cursor-pointer hidden">
+                <!-- Añade más imágenes según sea necesario -->
             </div>
+
+            <button onclick="showPreviousImage()" class="absolute left-0 top-10 transform -translate-y-1/2 text-[61px] text-white px-4 py-2 rounded"><</button>
+            <button onclick="showNextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-[61px]  text-white px-4 py-2 rounded">></button>
         </section>
-
-
-        
     </main>
     <!-- Footer -->
     <footer class="bg-[#3A4B66] mt-12">
