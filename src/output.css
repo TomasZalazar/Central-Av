@@ -667,10 +667,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.me-8 {
-  margin-inline-end: 2rem;
-}
-
 .ml-6 {
   margin-left: 1.5rem;
 }
@@ -833,6 +829,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -865,10 +865,6 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
 }
 
 .border-gray-200 {
@@ -972,11 +968,6 @@ video {
   padding-right: 1rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1000,6 +991,16 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pb-5 {
@@ -1041,6 +1042,10 @@ video {
   line-height: 2.5rem;
 }
 
+.text-\[17px\] {
+  font-size: 17px;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1074,10 +1079,6 @@ video {
 
 .tracking-widest {
   letter-spacing: 0.1em;
-}
-
-.tracking-normal {
-  letter-spacing: 0em;
 }
 
 .text-\[\#6A5C41\] {
@@ -1153,9 +1154,19 @@ video {
   background: url(../public/img/HeaderIMG.jpg) center/cover no-repeat;
 }
 
+.hover\:bg-\[\#406aaf\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 106 175 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.hover\:py-1:hover {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .hover\:text-\[\#FFE5A8\]:hover {
@@ -1210,10 +1221,6 @@ video {
     margin-bottom: 0px;
   }
 
-  .md\:me-6 {
-    margin-inline-end: 1.5rem;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -1260,6 +1267,10 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:p-5 {
@@ -1397,5 +1408,4 @@ video {
     gap: 20rem;
   }
 }
-
 

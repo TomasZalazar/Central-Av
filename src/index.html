@@ -22,8 +22,8 @@
 <body>
     <nav class="p-5 bg-[#3A4B66] sticky top-0 z-10  shadow   md:items-center md:justify-between">
         <div class="flex justify-between items-center ">
-            <span class="text-2xl font-[Poppins] cursor-pointer">
-                <img class="w-20" src="../public/logo/CAA.png" alt="">
+            <span class="text-2xl font-[Poppins] cursor-pointer"><a href="#inicio"><img class="w-20" src="../public/logo/CAA.png" alt=""></a>
+                
             </span>
             <span class="text-3xl cursor-pointer mx-2 md:hidden block" onclick="toggleMenu()">
                 <ion-icon name="menu"></ion-icon>
@@ -31,17 +31,17 @@
             <ul
                 class="md:flex md:items-center z-[1000] md:z-auto md:static absolute bg-[#3A4B66]  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
                 <li class=" mx-4 my-6 md:my-0">
-                    <a href="#section1" class="text-stone-50 text-sm hover:text-[#FFE5A8] duration-500">Departamentos</a>
+                    <a href="#section2" class="text-stone-50 text-sm  hover:bg-[#406aa f] py-1 px-3" onclick="closeMenu()">Testimonios</a>
                 </li>
                 <li class=" mx-4 my-6 md:my-0">
-                    <a href="#section2" class="text-stone-50 text-sm hover:text-[#FFE5A8] duration-500">Testimonios</a>
+                    <a href="#section1" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Departamentos</a>
                 </li>
-                <button class="text-stone-50 text-sm duration-500 px-6 hover:text-[#FFE5A8] rounded">
-                    Contacto
-                </button>
+                <li class=" mx-4 my-6 md:my-0">
+                    <a class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" href="#contactos" onclick="closeMenu()">Contacto</a>
+                </li>
             </ul>
     </nav>
-    <header class="bg-img h-screen w-full  sm:bg-no-repeat lg:bg-cover ">
+    <header id="inicio" class="bg-img h-screen w-full sm:bg-no-repeat lg:bg-cover ">
         <div
             class="text-container w-full bg-black bg-opacity-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white h-screen flex flex-col justify-center items-start px-16 gap-y-10">
             <h1 class="text-4xl md:text-5xl lg:w-[700px]">Central Av Aparts</h1>
@@ -58,8 +58,8 @@
                 hover:text-[#FFE5A8] 
                 ease-in 
                 duration-150 
-                font-semibold">
-                    Contacto
+                font-semibold"><a href="#contactos">Contacto</a>
+                    
                 </button>
             </div>
         </div>
@@ -93,7 +93,8 @@
                         ease-in 
                         duration-150 
                         font-semibold">
-                        Contacto
+                        <a href="#contactos">Contacto</a>
+                        
                     </button>
                 </div>
                 <div class="flex lg:basis-1/2 p-[50px]">
@@ -176,7 +177,7 @@
                             hover:text-[#FFE5A8] 
                             ease-in 
                             duration-150 
-                            font-semibold">Ver más</button>
+                            font-semibold"><a href="./pages/CentralAv.html">Ir a Central Av</a></button>
                         </div>
                     </article>
                     <article class="flex flex-col justify-center items-center gap-5">
@@ -193,13 +194,14 @@
                             hover:text-[#FFE5A8] 
                             ease-in 
                             duration-150 
-                            font-semibold">Ver más</button>
+                            font-semibold"><a href="./pages/SanNicolas.html">Ir a San Nicolas</a></button>
                         </div>
                     </article>
                 </div>
         </section>
 
         <!-- Seccion de preguntas frecuentes -->
+
         <div class="p-8">
             <div class="bg-white p-4 rounded-lg shadow-2xl py-8 mt-12">
                 <h4 class="text-4xl font-bold text-gray-800 tracking-widest uppercase text-center">FAQ</h4>
@@ -292,19 +294,19 @@
 
             <!-- Footer -->
 
-            <footer class="bg-[#3A4B66] mt-12">
+            <footer id="contactos" class="bg-[#3A4B66] mt-12">
                 <div class="w-full max-w-screen-lg mx-auto ">
-                    <div class="flex items-center justify-between ml-6 mr-6">
+                    <div class="flex items-center justify-around ml-6 mr-6">
                         <a href="../src/index.html" class="flex items-center">
-                            <img src="./public/logo/CentralAvApart-removebg-preview.png" class="h-32 w-32"
+                            <img src="../public/logo/CentralAvApart-removebg-preview.png" class="h-32 w-32"
                                 alt="Central Av Logo" />
                         </a>
-                        <ul class="flex flex-wrap items-center text-sm md:text-lg font-medium text-stone-50 ">
-                            <li>
-                                <a href="#" class="hover:underline me-8 md:me-6 ">Sobre nosotros</a>
-                            </li>
-                            <li>
-                                <a href="#" class="hover:underline ">Contacto</a>
+                        <ul class="flex flex-wrap items-center text-sm md:text-lg font-medium text-stone-50 gap-4 md:gap-8">
+                            <li class="">
+                                <span class="material-symbols-outlined" style="font-size: 20px;">
+                                    call
+                                    </span>
+                                +54 9 264-5153542
                             </li>
                         </ul>
                         <div class="flex flex-wrap items-center">
@@ -313,7 +315,6 @@
                             </a>
                         </div>
                     </div>
-
                     <hr class=" border-gray-200 sm:mx-auto stroke-neutral-50:border-gray-700 mb-4" />
                     <span
                         class="flex justify-center items-center text-xs text-stone-50 sm:text-center pb-5 hover:underline">©
