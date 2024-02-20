@@ -638,8 +638,20 @@ video {
   grid-row: span 3 / span 3;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
 .m-3 {
   margin: 0.75rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
 }
 
 .m-\[30px\] {
@@ -689,6 +701,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .ml-6 {
   margin-left: 1.5rem;
 }
@@ -713,6 +729,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -735,6 +755,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-32 {
@@ -763,6 +787,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-12 {
@@ -807,6 +835,10 @@ video {
 
 .max-w-screen-lg {
   max-width: 1024px;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
 }
 
 .-translate-x-1\/2 {
@@ -877,6 +909,10 @@ video {
 
 .gap-0 {
   gap: 0px;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-12 {
@@ -1177,6 +1213,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1205,6 +1247,11 @@ video {
   background: url(../public/img/CentralAv/header-123.jpg) center/cover no-repeat;
 }
 
+.bg-img-3 {
+  position: relative;
+  background: url(../public/img/SanNicolas/frente.webp) center/cover no-repeat;
+}
+
 .button-burguer
 
 /* carrousel central av */
@@ -1218,10 +1265,10 @@ video {
   height: auto;
 }
 
-.card-shadow{
-  box-shadow: 0px -3px 72px -4px rgba(0,0,0,0.46);
-  -webkit-box-shadow: 0px -3px 72px -4px rgba(0,0,0,0.46);
-  -moz-box-shadow: 0px -3px 72px -4px rgba(0,0,0,0.46);
+.card-shadow {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hover\:bg-\[\#406aaf\]:hover {
@@ -1287,6 +1334,10 @@ video {
 
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .md\:m-8 {
+    margin: 2rem;
   }
 
   .md\:m-auto {
@@ -1468,3 +1519,4 @@ video {
     gap: 20rem;
   }
 }
+
