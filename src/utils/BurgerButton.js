@@ -11,6 +11,7 @@ function toggleMenu() {
     list.classList.toggle('opacity-100');
 }
 
+
 function closeMenu() {
     // Selecciona el elemento <ul> en el DOM
     let list = document.querySelector('ul');
@@ -51,4 +52,5 @@ function closeMenu() {
             testimonialContainers[currentIndex].classList.remove('hidden');
         });
     });
+
 

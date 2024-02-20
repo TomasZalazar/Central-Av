@@ -7,4 +7,26 @@
     position: relative;
     background: url(../public/img/HeaderIMG.jpg) center/cover no-repeat;
 }
+.bg-img-2 {
+    position: relative;
+    background: url(../public/img/CentralAv/header-123.jpg) center/cover no-repeat;
+}
 
+.button-burguer
+
+/* carrousel central av */
+.gallery {
+    display: flex;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.card-shadow{
+    box-shadow: 0px -3px 72px -4px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px -3px 72px -4px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px -3px 72px -4px rgba(0,0,0,0.46);
+}
