@@ -32,3 +32,15 @@ document.getElementById('imageGallery').addEventListener('mouseout', function ()
     prevButton.classList.add('hidden');
     nextButton.classList.add('hidden');
 });
+
+
+function showImage(index) {
+    // Oculta todas las imágenes
+    const images = document.querySelectorAll('.gallery img');
+    images.forEach(function(img) {
+        img.classList.add('hidden');
+    });
+
+    // Muestra la imagen correspondiente al índice
+    images[index].classList.remove('hidden');
+}

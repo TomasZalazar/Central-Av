@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,19 +65,56 @@
             </div>
         </div>
     </header>
-    <main class="flex items-center justify-center ">
-        <section class="container mx-auto pt-16 relative ">
-            <div class="gallery " id="imageGallery">
+    <main class="" >
+        <section class=" relative flex flex-col items-center justify-center m-[30px]">
+            <div class="gallery relative " id="imageGallery">
                 <img src="../../public/img/CentralAv/comedor.jpg" alt="Comedor" class="w-full h-auto  shadow-md cursor-pointer">
                 <img src="../../public/img/CentralAv/habitacion.jpg" alt="Habitación" class="w-full h-auto  shadow-md cursor-pointer hidden">
                 <img src="../../public/img/CentralAv/living2.jpg" alt="Living" class="w-full h-auto  shadow-md cursor-pointer hidden">
                 <img src="../../public/img/CentralAv/header-123.jpg" alt="Living" class="w-full h-auto  shadow-md cursor-pointer hidden">
                 <img src="../../public/img/CentralAv/frentecocina.jpg" alt="Living" class="w-full h-auto  shadow-md cursor-pointer hidden">
+
                 <!-- Añade más imágenes según sea necesario -->
+                <button onclick="showPreviousImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-[61px] text-white  rounded"><</button>
+                <button onclick="showNextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-[61px]  text-white  rounded">></button>
+            </div>
+            <div class="thumbnails flex mt-4">
+                <img src="../../public/img/CentralAv/comedor.jpg" alt="Comedor" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(0)">
+                <!-- Agrega más miniaturas según sea necesario, y ajusta los índices -->
+                <img src="../../public/img/CentralAv/habitacion.jpg" alt="Habitación" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(1)">
+                <img src="../../public/img/CentralAv/living2.jpg" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(2)">
+                <!-- ... -->
             </div>
 
-            <button onclick="showPreviousImage()" class="absolute left-0 top-10 transform -translate-y-1/2 text-[61px] text-white px-4 py-2 rounded"><</button>
-            <button onclick="showNextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-[61px]  text-white px-4 py-2 rounded">></button>
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-0 m-[30px] card-shadow  mt-[50px]">
+            <div class="col-span-1 md:col-span-2 row-span-3  ">
+                <h2 class="text-2xl font-semibold text-center my-2 p-2">Descripcion</h2>
+                <div class="w-full  my-5 p-4 text-sm text-center overflow-auto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quo id, asperiores nam facilis dicta
+                        nesciunt magnam similique numquam. Recusandae?</p>
+                    <hr class="border-gray-200 my-6 sm:mx-auto stroke-neutral-50:border-gray-700 mb-4" />
+                </div>
+                <div class=" my-2 p-2 ">
+                    <ul class="list-inside list-disc">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</li>
+                    </ul>
+                    <hr class="border-gray-200 my-6 sm:mx-auto stroke-neutral-50:border-gray-700 mb-4" />
+                    <div class="flex justify-center my-2 ">
+                        <ul class="flex justify-around cursor-pointer mx-4 text-1xs">
+                            <li class="mx-2">palabra 1</li>
+                            <li class="mx-2">palabras2</li>
+                            <li class="mx-2">palabra 3</li>
+                        </ul>
+                    </div>
+                    <div class=" ">
+                        <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum pariatur at eaque dolorum possimus, quae suscipit, quia iure temporibus, maiores ducimus consequuntur ab esse officia non doloribus facilis sed!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 md:col-span-1 row-span-3  overflow-auto">a</div>
         </section>
     </main>
     <!-- Footer -->
