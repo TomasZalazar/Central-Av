@@ -31,7 +31,7 @@
             <ul
                 class="md:flex md:items-center z-[1000] md:z-auto md:static absolute bg-[#3A4B66]  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
                 <li class=" mx-4 my-6 md:my-0">
-                    <a href="#section2" class="text-stone-50 text-sm  hover:bg-[#406aa f] py-1 px-3" onclick="closeMenu()">Testimonios</a>
+                    <a href="#section2" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Testimonios</a>
                 </li>
                 <li class=" mx-4 my-6 md:my-0">
                     <a href="#section1" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Departamentos</a>
@@ -67,7 +67,7 @@
 
     <main>
         <!-- Section info Dpto-->
-        <section class="container mx-auto pt-20 text-[17px]">
+        <section class="container mx-auto pt-20 text-[17px] ">
             <div class="flex flex-col lg:flex-row ">
                 <div class="lg:basis-1/2 flex flex-col justify-center items-center p-[50px] gap-6">
                     <h2 class="text-2xl md:text-4xl font-semibold font-poppins">Explora la Esencia de San Juan: Dos
@@ -160,52 +160,49 @@
 
         <!-- Informacion departamentos - Cards  -->
 
-        <section id="section1" class="scroll-mt-40 m-auto">
-            <h2 class="flex justify-center items-center font-poppins text-2xl md:text-5xl font-bold p-8 md:pt-9">Nuestros
-                departamentos</h2>
-                <div class="flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-40 2xl:gap-80 p-10">
-                    <article class="flex flex-col justify-center items-center gap-5">
-                        <h2 class="text-2xl md:text-4xl">Central Av Apart</h2>
-                        <img src="../public/img/CentralAv/CostadoCAv.jpg" alt="image" class="w-[300px] h-[300px] md:w-[528px] md:h-[600px] lg:w-[428px] lg:h-[500px]">
-                        <div class="flex flex-col justify-center items-center bg-[#F0CABB] p-2 md:p-5 w-[280px] md:w-[500px] lg:w-[428px]">
-                            <span class="text-gray-600 my-2">Experimenta la vida urbana en su máxima expresión en nuestro moderno y acogedor apartamento en el corazón de la ciudad. Con una ubicación céntrica, comodidades de lujo y vistas impresionantes, Central Av te ofrece una estancia inolvidable en medio de la ciudad.</span>
-                            <button class="
-                            m-3
-                            px-8 
-                            py-2 
-                            bg-[#3A4B66] 
-                            text-stone-50 
-                            hover:text-[#FFE5A8] 
-                            ease-in 
-                            duration-150 
-                            font-semibold"><a href="./pages/CentralAv.html">Ir a Central Av</a></button>
-                        </div>
-                    </article>
-                    <article class="flex flex-col justify-center items-center gap-5">
-                        <h2 class="text-2xl md:text-4xl">San Nicolas Apart</h2>
-                        <img src="../public/img/SanNicolas/frenteSanNicolas.jpg" alt="image" class="w-[300px] h-[300px] md:w-[528px] md:h-[600px] lg:w-[428px] lg:h-[500px]">
-                        <div class="flex flex-col justify-center items-center bg-[#F0CABB] p-2 md:p-5 w-[280px] md:w-[500px] lg:w-[428px]">
-                            <span class="text-gray-600 my-2">Sumérgete en la tranquilidad y el encanto de nuestro apartamento en San Nicolás. Situado en un entorno sereno con vistas panorámicas, este refugio ofrece paz y comodidad, perfecto para aquellos que buscan escapar del ajetreo urbano sin sacrificar la conveniencia.</span>
-                            <button class="
-                            m-3
-                            px-8 
-                            py-2 
-                            bg-[#3A4B66] 
-                            text-stone-50 
-                            hover:text-[#FFE5A8] 
-                            ease-in 
-                            duration-150 
-                            font-semibold"><a href="./pages/SanNicolas.html">Ir a San Nicolas</a></button>
-                        </div>
-                    </article>
-                </div>
+        <section class="flex flex-col lg:flex-row lg:h-screen md:gap-6 bg-gradient-to-r from-slate-500 to-slate-800">
+            <div class="lg:basis-1/2 flex flex-col justify-center items-center text-white p-10">
+                <h3 class="text-4xl font-bold  text-center ">Central Av. Apart</h3>
+                <p class="text-center mt-6">Experimenta la vida urbana en su máxima expresión en nuestro moderno y acogedor apartamento en el corazón de la ciudad. Con una ubicación céntrica, comodidades de lujo y vistas impresionantes, Central Av. te ofrece una estancia inolvidable en medio de la ciudad.</p>
+                <button class="
+                mt-8
+                px-8 
+                py-2 
+                bg-[#F0cabb] 
+                text-[#3a4b66]
+                ease-in 
+                duration-150 
+                font-semibold"><a href="">Contactos</a></button>
+            </div>
+            <div class="lg:basis-1/2 flex justify-center p-10">
+                <img class="object-contain" src="../public/img/CentralAv/header-123.jpg" alt="">
+            </div>
         </section>
 
+        <section class="flex flex-col lg:flex-row lg:h-screen md:gap-6 bg-[#F0CABB]">
+                <div class="lg:basis-1/2 flex justify-center p-10">
+                <img class="object-contain" src="../public/img/SanNicolas/estetico.webp" alt="">
+            </div>
+            <div class="lg:basis-1/2 flex flex-col justify-center items-center text-stone-50 p-10 ">
+                <h3 class="text-3xl md:text-4xl font-bold text-center">San Nicolas Apart</h3>
+                <p class="text-center mt-6">Experimenta el equilibrio perfecto entre comodidad, seguridad y estilo en nuestro exclusivo departamento. Diseñado para ofrecerte una experiencia de alojamiento inigualable, nuestro espacio combina modernidad y funcionalidad para satisfacer todas tus necesidades durante tu estancia.</p>
+                <button class="
+                mt-8
+                px-8 
+                py-2 
+                bg-[#3A4B66] 
+                text-stone-50 
+                ease-in 
+                duration-150 
+                font-semibold"><a href="">Contactos</a></button>
+            </div>
+        </section>
+        
         <!-- Seccion de preguntas frecuentes -->
 
         <div class="p-8">
-            <div class="bg-white p-4 rounded-lg shadow-2xl py-8 mt-12">
-                <h4 class="text-4xl font-bold text-gray-800 tracking-widest uppercase text-center">Preguntas frecuentes</h4>
+            <div class="bg-white p-4 md:rounded-lg md:shadow-2xl py-8">
+                <h4 class="text-4xl font-bold text-gray-800 text-center">Preguntas frecuentes</h4>
                 <p class="text-center text-gray-600 text-sm mt-2">
                     Aquí tienes algunas de las preguntas frecuentes:</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-12 px-2 xl:px-12 mt-4">
@@ -294,7 +291,7 @@
         <!-- Seccion Contactos -->
 
         <section id="contactos" class="p-8">
-            <div class="bg-white p-4 rounded-lg shadow-2xl py-5 mt-12">
+            <div class="bg-white p-4 md:rounded-lg md:shadow-2xl md:py-5 md:mt-12">
                 <div class="flex flex-col justify-center text-center">
                     <h3 class="text-3xl md:text-5xl font-bold text-gray-800 text-center">Contáctanos</h3>
                     <p class="text-gray-600 my-4">Estamos aquí para ayudarte. Si estás interesado en nuestros departamentos o tienes alguna pregunta, no dudes en ponerte en contacto con nosotros.Puedes comunicarte con nosotros de las siguientes maneras:</p>
