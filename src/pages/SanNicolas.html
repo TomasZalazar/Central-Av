@@ -26,10 +26,10 @@
             <ul
                 class="md:flex md:items-center z-[1000] md:z-auto md:static absolute bg-[#3A4B66]  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
                 <li class=" mx-4 my-6 md:my-0">
-                    <a href="#section2" class="text-stone-50 text-sm  hover:bg-[#406aa f] py-1 px-3" onclick="closeMenu()">Testimonios</a>
+                    <a href="#section3" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Galeria</a>
                 </li>
                 <li class=" mx-4 my-6 md:my-0">
-                    <a href="#section1" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Departamentos</a>
+                    <a href="#section4" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Informacion</a>
                 </li>
                 <li class=" mx-4 my-6 md:my-0">
                     <a class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" href="#contactos" onclick="closeMenu()">Contacto</a>
@@ -38,7 +38,6 @@
     </nav>
 
     <header class="bg-img-3 h-screen w-full  sm:bg-no-repeat lg:bg-cover ">
-
         <div
             class="text-container w-full bg-black bg-opacity-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white h-screen flex flex-col justify-center items-center px-16 gap-y-10 ">
             <h1
@@ -65,7 +64,10 @@
 
 
     <main>
-        <section class=" relative flex flex-col items-center justify-center m-[30px]">
+        <section id="section3" class=" relative flex flex-col items-center justify-center m-[30px] scroll-mt-20">
+            <div>
+                <h3 class="text-4xl md:text-5xl font-bold text-gray-800 text-center m-5">Galeria de fotos</h3>
+            </div>
             <div class="gallery relative " id="imageGallery">
                 <img src="../../public/img/SanNicolas/cochera.webp" alt="Comedor" class="w-full h-auto  shadow-md cursor-pointer">
                 <img src="../../public/img/SanNicolas/cocina2.webp" alt="Habitación" class="w-full h-auto  shadow-md cursor-pointer hidden">
@@ -84,11 +86,13 @@
                 <img src="../../public/img/SanNicolas/habitacionx2.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(2)">
                 <!-- ... -->
             </div>
-
         </section>
-        <section class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-0 m-[30px] card-shadow  mt-[50px]">
+
+        <!-- Seccion Descripcion -->
+
+        <section id="section4" class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-0 m-[30px] card-shadow  mt-[50px] scroll-mt-20">
             <div class="col-span-1 md:col-span-2 row-span-3  ">
-                <h2 class="text-2xl font-semibold text-center my-2 p-2">Descripcion</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mt-5">Descripcion</h2>
                 <div class="w-full my-5  p-4  text-center overflow-auto">
                     <p class="text-gray-600 ">Nuestros departamentos están diseñados pensando en la comodidad y seguridad de nuestros huéspedes. Cada unidad está equipada con características cuidadosamente seleccionadas para garantizar una estancia cómoda y tranquila.</p>
                     <hr class="border-gray-200 my-6 sm:mx-auto stroke-neutral-50:border-gray-700 mb-4" />
@@ -99,41 +103,49 @@
                         <li>Sistema de aire acondicionado con opción de frío y calor.</li>
                         <li>Detectores de humo y monóxido de carbono / Extintor de incendios y botiquín de primeros auxilios.</li>
                     </ul>
-                    <hr class="border-gray-200 my-6 sm:mx-auto stroke-neutral-50:border-gray-700 mb-4" />
-                    <div class="flex justify-center my-2 ">
-                        <ul class="flex justify-around cursor-pointer mx-4 text-1px">
-                            <li class="mx-2">palabra 1</li>
-                            <li class="mx-2">palabras2</li>
-                            <li class="mx-2">palabra 3</li>
-                        </ul>
-                    </div>
-                    <div class=" ">
-                        <p class=" text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum pariatur at eaque dolorum possimus, quae suscipit, quia iure temporibus, maiores ducimus consequuntur ab esse officia non doloribus facilis sed!</p>
-                    </div>
                 </div>
             </div>
             <div class="col-span-1 md:col-span-1 row-span-3 rounded-lg bg-[#F0CABB] shadow-xl m-10">
-                <div class="flex flex-col ">
+                <div class="flex flex-col">
                     <div class="flex justify-center items-center">
-                        <h3 class="text-3xl font-bold text-gray-800 tracking-widest text-center m-2">Lugares de interes</h3>
+                        <h3 class="text-3xl font-bold text-gray-800 tracking-widest text-center m-2">Lugares de interés</h3>
                     </div>
-                    <div class="m-10">
+                    <div class="m-7">
                         <ul>
-                            <li class="text-gray-600 my-2">850mts de Casino Del Bono Park</li>
-                            <li class="text-gray-600 my-2">4.9kms de Terminal de Omnibus</li>
-                            <li class="text-gray-600 my-2">2.5kms del Teatro del Bicentenario</li>
-                            <li class="text-gray-600 my-2">3.3kms de Casa Natal Domingo Faustino Sarmiento</li>
-                            <li class="text-gray-600 my-2">8.6kms de Estadio Bicentenario</li>
-                            <li class="text-gray-600 my-2">14km de Aeropuerto Internacional</li>
+                            <li class="text-gray-600 my-2 flex items-center justify-start">
+                                <span class="material-symbols-outlined" style="font-size: 40px; color: #3A4B66;">casino</span>
+                                <span class="ml-2">850mts de Casino Del Bono Park</span>
+                            </li>
+                            <li class="text-gray-600 my-2 flex items-center justify-start">
+                                <span class="material-symbols-outlined" style="font-size: 40px; color: #3A4B66;">directions_bus</span>
+                                <span class="ml-2">4.9kms de Terminal de Omnibus</span>
+                            </li>
+                            <li class="text-gray-600 my-2 flex items-center justify-start">
+                                <span class="material-symbols-outlined" style="font-size: 40px; color: #3A4B66;">theater_comedy</span>
+                                <span class="ml-2">2.5kms del Teatro del Bicentenario</span>
+                            </li>
+                            <li class="text-gray-600 my-2 flex items-center justify-start">
+                                <span class="material-symbols-outlined" style="font-size: 40px; color: #3A4B66;">menu_book</span>
+                                <span class="ml-2">3.3kms de Casa Natal Domingo Faustino Sarmiento</span>
+                            </li>
+                            <li class="text-gray-600 my-2 flex items-center justify-start">
+                                <span class="material-symbols-outlined" style="font-size: 40px; color: #3A4B66;">stadium</span>
+                                <span class="ml-2">8.6kms de Estadio Bicentenario</span>
+                            </li>
+                            <li class="text-gray-600 my-2 flex items-center justify-start">
+                                <span class="material-symbols-outlined" style="font-size: 40px; color: #3A4B66;">flight_land</span>
+                                <span class="ml-2">14km de Aeropuerto Internacional</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
+                
             </div>
         </section>
 
         <!-- Seccion Contacto -->
 
-        <section class="m-10 card-shadow ">
+        <section id="contactos" class="m-10 card-shadow scroll-mt-20">
             <div class="flex justify-center">
                 <h3 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mt-5">Contactanos</h3>
             </div>
