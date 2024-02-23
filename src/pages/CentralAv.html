@@ -24,19 +24,22 @@
                 <ion-icon class="text-white" name="menu"></ion-icon>
             </span>
             <ul
-                class="md:flex md:items-center z-[1000] md:z-auto md:static absolute bg-[#3A4B66]  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                <li class=" mx-4 my-6 md:my-0">
-                    <a href="#section2" class="text-stone-50 text-sm  hover:bg-[#406aa f] py-1 px-3" onclick="closeMenu()">Testimonios</a>
-                </li>
-                <li class=" mx-4 my-6 md:my-0">
-                    <a href="#section1" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Departamentos</a>
-                </li>
-                <li class=" mx-4 my-6 md:my-0">
-                    <a class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" href="#contactos" onclick="closeMenu()">Contacto</a>
-                </li>
-            </ul>
+            class="md:flex md:items-center z-[1000] md:z-auto md:static absolute bg-[#3A4B66]  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class=" mx-4 my-6 md:my-0">
+                <a href="#inicio" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Inicio</a>
+            </li>
+            <li class=" mx-4 my-6 md:my-0">
+                <a href="#galeria" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Galeria</a>
+            </li>
+            <li class=" mx-4 my-6 md:my-0">
+                <a href="#informacion" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Informacion</a>
+            </li>
+            <li class=" mx-4 my-6 md:my-0">
+                <a class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" href="#contactos" onclick="closeMenu()">Contacto</a>
+            </li>
+        </ul>
     </nav>
-    <header class="bg-img-2 h-screen w-full  sm:bg-no-repeat lg:bg-cover ">
+    <header id="inicio" class="bg-img-2 h-screen w-full  sm:bg-no-repeat lg:bg-cover ">
 
         <div
             class="text-container w-full bg-black bg-opacity-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white h-screen flex flex-col justify-center items-center px-16 gap-y-10 ">
@@ -62,8 +65,11 @@
             </div>
         </div>
     </header>
-    <main class="" >
-        <section class=" relative flex flex-col items-center justify-center m-[30px]">
+    <main >
+        <section id="galeria" class=" relative flex flex-col items-center justify-center m-[30px] scroll-mt-20">
+            <div>
+                <h3 class="text-4xl md:text-5xl font-bold text-gray-800 text-center m-5">Galeria de fotos</h3>
+            </div>
             <div class="gallery relative " id="imageGallery">
                 <img src="../../public/img/CentralAv/living2.webp" alt="Comedor" class="w-full h-auto  shadow-md cursor-pointer">
                 <img src="../../public/img/CentralAv/habitacion2.webp" alt="Habitación" class="w-full h-auto  shadow-md cursor-pointer hidden">
@@ -84,45 +90,51 @@
             </div>
 
         </section>
-        <section class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-0 m-[30px] card-shadow  mt-[50px]">
+        <section id="informacion" class="grid grid-cols-1 lg:grid-cols-3 grid-rows-3 gap-0 m-[30px] card-shadow  mt-[50px] scroll-mt-20">
             <div class="col-span-1 md:col-span-2 row-span-3  ">
-                <h2 class="text-2xl font-semibold text-center my-2 p-2">Descripcion</h2>
-                <div class="w-full  my-5 p-4 text-sm text-center overflow-auto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quo id, asperiores nam facilis dicta
-                        nesciunt magnam similique numquam. Recusandae?</p>
-                    <hr class="border-gray-200 my-6 sm:mx-auto stroke-neutral-50:border-gray-700 mb-4" />
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mt-5">Descripcion</h2>
+                <div class="w-full p-4 text-justify overflow-auto">
+                    <p class="text-gray-600 mb-3">
+                        Bienvenido a San Nicolas Apart. Este encantador apart es el lugar perfecto para una escapada romántica o una estancia cómoda para dos personas en San Juan.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-3">
+                        El departamento cuenta con una cama matrimonial, armario y mueble, ofreciéndote un espacio íntimo y acogedor para descansar y relajarte. Posee baño con secador de pelo incluido la cual te brindará todas las comodidades que necesitas durante tu estancia.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-3">
+                        La cocina está totalmente equipada para que puedas preparar tus comidas favoritas a tu propio ritmo. Además, el departamento incluye toallas y sábanas de calidad, para que no te preocupes de llevarlas contigo.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-3">
+                        Disfruta de entretenimiento con su Smart TV y accede a tus programas favoritos a través del servicio de cable incluido. Mantente conectado con Wi-fi gratuito disponible en todo el departamento.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-3">
+                        No pierdas la oportunidad de reservar San Nicolas Apart y disfruta de una estancia tranquila y confortable en San Juan. ¡Te garantizamos una experiencia inolvidable!
+                    </p>
+                    <hr class="border-gray-200  sm:mx-auto stroke-neutral-50:border-gray-700" />
                 </div>
-                <div class=" my-2 p-2 ">
-                    <ul class="list-inside list-disc">
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</li>
+                <div class=" my-2 mx-2 p-2 ">
+                    <h3>Seguridad y Confort</h3>
+                    <ul class="list-inside list-disc text-gray-600">
+                        <li>Cochera cubierta con portón automático en el interior del edificio.</li>
+                        <li>Sistema de aire acondicionado con opción de frío y calor.</li>
+                        <li>Detectores de humo y monóxido de carbono / Extintor de incendios y botiquín de primeros auxilios.</li>
                     </ul>
                     <hr class="border-gray-200 my-6 sm:mx-auto stroke-neutral-50:border-gray-700 mb-4" />
-                    <div class="flex flex-row justify-center items-center">
-                        <ul class="flex flex-col md:flex-row gap-5 md:gap-[40px]">
-                            <li class="text-gray-600 my-2 flex items-center justify-start">
-                            <span class="material-symbols-outlined" style="font-size: 40px; margin-right:4px;">tv</span>
-                            Smart tv
-                            </li>
-                            <li class="text-gray-600 my-2 flex items-center justify-start">
-                                <span class="material-symbols-outlined" style="font-size: 40px; margin-right:4px;">wifi</span>
-                                Gratuito
-                            </li>
-                            <li class="text-gray-600 my-2 flex items-center justify-start">
-                                <span class="material-symbols-outlined" style="font-size: 40px; margin-right:4px;">bathtub</span>
-                                1 Baño
-                            </li>
-                            <li class="text-gray-600 my-2 flex items-center justify-start">
-                                <span class="material-symbols-outlined" style="font-size: 40px; margin-right:4px;">key</span>
-                                1 Habitacion
-                            </li>
-                            </ul>
-    
+                    <div class="flex justify-center my-2 ">
+                        <ul class="flex justify-around cursor-pointer mx-4 text-1xs">
+                            <li class="mx-2">palabra 1</li>
+                            <li class="mx-2">palabras2</li>
+                            <li class="mx-2">palabra 3</li>
+                        </ul>
+                    </div>
+                    <div class=" ">
+                        <p class="text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum pariatur at eaque dolorum possimus, quae suscipit, quia iure temporibus, maiores ducimus consequuntur ab esse officia non doloribus facilis sed!</p>
                     </div>
                 </div>
             </div>
-            <div class="col-span-1 md:col-span-1 row-span-3  overflow-auto">a</div>
         </section>
     </main>
     
