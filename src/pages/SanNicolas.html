@@ -26,6 +26,9 @@
             <ul
                 class="md:flex md:items-center z-[1000] md:z-auto md:static absolute bg-[#3A4B66]  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
                 <li class=" mx-4 my-6 md:my-0">
+                    <a href="#section5" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Inicio</a>
+                </li>
+                <li class=" mx-4 my-6 md:my-0">
                     <a href="#section3" class="text-stone-50 text-sm  hover:bg-[#406aaf] py-1 px-3" onclick="closeMenu()">Galeria</a>
                 </li>
                 <li class=" mx-4 my-6 md:my-0">
@@ -37,7 +40,7 @@
             </ul>
     </nav>
 
-    <header class="bg-img-3 h-screen w-full  sm:bg-no-repeat lg:bg-cover ">
+    <header id="section5" class="bg-img-3 h-screen w-full  sm:bg-no-repeat lg:bg-cover ">
         <div
             class="text-container w-full bg-black bg-opacity-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white h-screen flex flex-col justify-center items-center px-16 gap-y-10 ">
             <h1
@@ -55,8 +58,8 @@
                 hover:text-[#FFE5A8] 
                 ease-in 
                 duration-150 
-                font-semibold">
-                    Contacto
+                font-semibold"><a href="#contactos">Contacto</a>
+                    
                 </button>
             </div>
         </div>
@@ -90,14 +93,33 @@
 
         <!-- Seccion Descripcion -->
 
-        <section id="section4" class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-0 m-[30px] card-shadow  mt-[50px] scroll-mt-20">
+        <section id="section4" class="grid grid-cols-1 lg:grid-cols-3 grid-rows-3 gap-0 m-[30px] card-shadow  mt-[50px] scroll-mt-20">
             <div class="col-span-1 md:col-span-2 row-span-3  ">
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mt-5">Descripcion</h2>
-                <div class="w-full my-5  p-4  text-center overflow-auto">
-                    <p class="text-gray-600 ">Nuestros departamentos están diseñados pensando en la comodidad y seguridad de nuestros huéspedes. Cada unidad está equipada con características cuidadosamente seleccionadas para garantizar una estancia cómoda y tranquila.</p>
-                    <hr class="border-gray-200 my-6 sm:mx-auto stroke-neutral-50:border-gray-700 mb-4" />
+                <div class="w-full p-4 text-justify overflow-auto">
+                    <p class="text-gray-600 mb-3">
+                        Bienvenido a San Nicolas Apart. Este encantador apart es el lugar perfecto para una escapada romántica o una estancia cómoda para dos personas en San Juan.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-3">
+                        El departamento cuenta con una cama matrimonial, armario y mueble, ofreciéndote un espacio íntimo y acogedor para descansar y relajarte. Posee baño con secador de pelo incluido la cual te brindará todas las comodidades que necesitas durante tu estancia.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-3">
+                        La cocina está totalmente equipada para que puedas preparar tus comidas favoritas a tu propio ritmo. Además, el departamento incluye toallas y sábanas de calidad, para que no te preocupes de llevarlas contigo.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-3">
+                        Disfruta de entretenimiento con su Smart TV y accede a tus programas favoritos a través del servicio de cable incluido. Mantente conectado con Wi-fi gratuito disponible en todo el departamento.
+                    </p>
+                    
+                    <p class="text-gray-600 mb-3">
+                        No pierdas la oportunidad de reservar San Nicolas Apart y disfruta de una estancia tranquila y confortable en San Juan. ¡Te garantizamos una experiencia inolvidable!
+                    </p>
+                    <hr class="border-gray-200  sm:mx-auto stroke-neutral-50:border-gray-700" />
                 </div>
                 <div class=" my-2 mx-2 p-2 ">
+                    <h3>Seguridad y Confort</h3>
                     <ul class="list-inside list-disc text-gray-600">
                         <li>Cochera cubierta con portón automático en el interior del edificio.</li>
                         <li>Sistema de aire acondicionado con opción de frío y calor.</li>
@@ -105,7 +127,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-span-1 md:col-span-1 row-span-3 rounded-lg bg-[#F0CABB] shadow-xl m-10">
+            <div class="col-span-1 md:col-span-1 row-span-3 rounded-lg bg-[#F0CABB] shadow-xl m-4 md:m-10">
                 <div class="flex flex-col">
                     <div class="flex justify-center items-center">
                         <h3 class="text-3xl font-bold text-gray-800 tracking-widest text-center m-2">Lugares de interés</h3>
@@ -145,21 +167,21 @@
 
         <!-- Seccion Contacto -->
 
-        <section id="contactos" class="m-10 card-shadow scroll-mt-20">
+        <section id="contactos" class="m-4 md:m-10 card-shadow scroll-mt-20">
             <div class="flex justify-center">
                 <h3 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mt-5">Contactanos</h3>
             </div>
             <div class="flex flex-col lg:flex-row gap-10 m-5 md:m-8">
-                <div class="basis-1/2 m-5">
-                    <ul class="flex flex-col gap-4 md:m-auto md:gap-8 my-2">
+                <div class="basis-1/2 m-5 rounded-lg bg-[#F0CABB] shadow-2xl flex justify-center items-center p-8">
+                    <ul class="flex flex-col gap-4 md:m-auto md:gap-8 my-2 ">
                         <li class="text-gray-600 flex flex-col">
-                            <span class="material-symbols-outlined" style="font-size: 50px; color: #F0CABB;">
+                            <span class="material-symbols-outlined" style="font-size: 50px; color: #3A4B66;">
                                 person
                             </span>
                             <p class="flex ml-4">Ariel Seferian</p>
                         </li>
                         <li class="text-gray-600 flex flex-col">
-                            <span class="material-symbols-outlined" style="font-size: 40px; color: #F0CABB;">
+                            <span class="material-symbols-outlined" style="font-size: 40px; color: #3A4B66;">
                                 mail
                             </span>
                             <p class="flex ml-4">ArielSeferian@gmail.com</p>
@@ -171,7 +193,7 @@
                             <p class="flex ml-4">+54 9 264-5153542</p>
                         </li>
                         <li class="text-gray-600 flex flex-col">
-                            <span class="material-symbols-outlined"  style="font-size: 40px; color: #F0CABB;">
+                            <span class="material-symbols-outlined"  style="font-size: 40px; color: #3A4B66;">
                                 location_on
                                 </span>
                             <p class="flex ml-4">Av. José Ignacio de la Roza Oeste 431, J5400 San Juan</p>
@@ -179,7 +201,7 @@
                     </ul>
                 </div>
                 <div class="basis-1/2 flex justify-center m-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27205.673472087186!2d-68.56772216523436!3d-31.532146414713058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968141253ab78b93%3A0xf255d24360467fd9!2sCentral%20Av.%20Apart!5e0!3m2!1ses-419!2sar!4v1708468711363!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13601.567991017573!2d-68.5629791!3d-31.540855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968141b612ff32df%3A0x6f97ddf486ec5bc7!2sDepartamento%20San%20Nicol%C3%A1s!5e0!3m2!1ses-419!2sar!4v1708699492116!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
