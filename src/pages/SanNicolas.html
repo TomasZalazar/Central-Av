@@ -17,7 +17,7 @@
 <body>
     <nav class="p-5 bg-[#3A4B66] sticky top-0 z-10  shadow   md:items-center md:justify-between">
         <div class="flex justify-between items-center ">
-            <span class="text-2xl font-[Poppins] cursor-pointer"><a href="../index.html"><img class="w-20" src="../../public/logo/CAA.png" alt=""></a>
+            <span class="text-2xl font-[Poppins] cursor-pointer"><a href="../../index.html"><img class="w-20" src="../../public/logo/CAA.png" alt=""></a>
                 
             </span>
             <span class="text-3xl cursor-pointer mx-2 md:hidden block" onclick="toggleMenu()">
@@ -67,29 +67,48 @@
 
 
     <main>
+
+        <!-- Seccion Galeria de imagenes -->
+
         <section id="section3" class=" relative flex flex-col items-center justify-center m-[30px] scroll-mt-20">
             <div>
                 <h3 class="text-4xl md:text-5xl font-bold text-gray-800 text-center m-5">Galeria de fotos</h3>
             </div>
-            <div class="gallery relative " id="imageGallery">
-                <img src="../../public/img/SanNicolas/cochera.webp" alt="Comedor" class="w-full h-auto  shadow-md cursor-pointer">
-                <img src="../../public/img/SanNicolas/cocina2.webp" alt="Habitación" class="w-full h-auto  shadow-md cursor-pointer hidden">
-                <img src="../../public/img/SanNicolas/cocinax2.webp" alt="Living" class="w-full h-auto  shadow-md cursor-pointer hidden">
-                <img src="../../public/img/SanNicolas/habitacionx2.webp" alt="Living" class="w-full h-auto  shadow-md cursor-pointer hidden">
-                <img src="../../public/img/SanNicolas/baño.webp" alt="Living" class="w-full h-auto  shadow-md cursor-pointer hidden">
+            <div class="gallery relative md:h-[450px] " id="imageGallery">
+                <img src="../../public/img/SanNicolas/cocinaSanNicolas.webp" alt="Habitacion" >
+                <img src="../../public/img/SanNicolas/cocinaSanNicolas2.webp" alt="Habitación" class="w-full shadow-md cursor-pointer hidden">
+                <img src="../../public/img/SanNicolas/livingSanNicolas.webp" alt="Desayuno" class="w-full shadow-md cursor-pointer hidden">
+                <img src="../../public/img/SanNicolas/sillonSanNicolas.webp" alt="Toallas" class="w-full shadow-md cursor-pointer hidden">
+                <img src="../../public/img/SanNicolas/bañoSanNicolas.webp" alt="Baño" class="w-full shadow-md cursor-pointer hidden">
+                <img src="../../public/img/SanNicolas/bañoSanNicolas2.webp" alt="Vino" class="w-full shadow-md cursor-pointer hidden">
+                <img src="../../public/img/SanNicolas/habSanNicolas.webp" alt="Cocina" class="w-full shadow-md cursor-pointer hidden">
+                <img src="../../public/img/SanNicolas/habSanNicolas2.webp" alt="Living" class="w-full shadow-md cursor-pointer hidden">
+                <img src="../../public/img/CentralAv/sabanas.webp" alt="Living" class="w-full shadow-md cursor-pointer hidden">
+                <img src="../../public/img/CentralAv/toallas.webp" alt="Living" class="w-full shadow-md cursor-pointer hidden">
+                <img src="../../public/img/SanNicolas/balconSanNicolas.webp" alt="Living" class="w-full shadow-md cursor-pointer hidden">
+                <img src="../../public/img/SanNicolas/frente.webp" alt="Living" class="w-full shadow-md cursor-pointer hidden">
+                <button onclick="showPreviousImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-[61px] text-[#406aaf]  rounded"><</button>
+                <button onclick="showNextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-[61px]  text-[#406aaf]  rounded">></button>
+            </div>
+            <div class="thumbnails flex flex-wrap mt-4">
+                <img src="../../public/img/CentralAv/sabanas.webp" alt="Comedor" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(0)">
+                <img src="../../public/img/CentralAv/desayuno.webp" alt="Habitación" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(2)">
+                <img src="../../public/img/CentralAv/toallas.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(3)">
+                <img src="../../public/img/CentralAv/baño1.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(4)">
+                <img src="../../public/img/CentralAv/vino.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(5)">
+                <img src="../../public/img/CentralAv/frentecocina.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(6)">
+                <img src="../../public/img/CentralAv/living.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(7)">
+            </div>
 
-                <!-- Añade más imágenes según sea necesario -->
-                <button onclick="showPreviousImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-[61px] text-white  rounded"><</button>
-                <button onclick="showNextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-[61px]  text-white  rounded">></button>
-            </div>
-            <div class="thumbnails flex mt-4">
-                <img src="../../public/img/SanNicolas/cochera.webp" alt="Comedor" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(0)">
-                <!-- Agrega más miniaturas según sea necesario, y ajusta los índices -->
-                <img src="../../public/img/SanNicolas/cocinax2.webp" alt="Habitación" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(1)">
-                <img src="../../public/img/SanNicolas/habitacionx2.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(2)">
-                <!-- ... -->
-            </div>
         </section>
+        <div class="flex flex-col justify-center items-center m-4">
+            <h4 class="text-3xl md:text-4xl font-bold text-gray-800 text-center m-5">Video del departamento</h4>
+            <video width="640" height="360" controls>
+                        <source src="../../public/c259e3c8-d99b-40a8-acd3-4268d0e2a5d0.mp4" type="video/mp4" >
+                        Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        
 
         <!-- Seccion Descripcion -->
 
@@ -188,7 +207,8 @@
                 <h3 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mt-5">Contactanos</h3>
             </div>
             <div class="flex flex-col lg:flex-row gap-10 m-1 md:m-8">
-                <div class="basis-1/2  rounded-lg bg-[#F0CABB] shadow-2xl m-2 flex justify-center items-center p-8">
+                <div class="basis-1/2  rounded-lg bg-[#F0CABB] shadow-2xl m-2 flex flex-col justify-center items-center p-8">
+                    <h4 class="text-3xl md:text-4xl font-bold text-gray-600 text-center mt-5">Datos</h4>
                     <ul class="flex flex-col gap-4 md:m-auto md:gap-8 my-2 ">
                         <li class=" flex flex-col">
                             <div class="flex">
@@ -211,7 +231,7 @@
                                 <a href="https://wa.me/2645184546" target="_blank">
                                     <img class="w-8 h-8" src="../../public/logo/logo-wsp1.webp" alt="logo whatsapp">
                                 </a>
-                                <p class="flex ml-4 text-gray-600">+54 9 264-5153542</p>
+                                <p class="flex ml-4 text-gray-600">+54 9 264-5184546</p>
                             </div>
                         </li>
                         <li class=" flex flex-col">
@@ -225,7 +245,7 @@
                     </ul>
                 </div>
                 <div class="basis-1/2 flex justify-center m-5 overflow-auto">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13602.028754227409!2d-68.5319944!3d-31.5376926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968141253ab78b93%3A0xf255d24360467fd9!2sCentral%20Av.%20Apart!5e0!3m2!1ses-419!2sar!4v1708717077110!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13601.567991017573!2d-68.5629791!3d-31.540855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968141b612ff32df%3A0x6f97ddf486ec5bc7!2sDepartamento%20San%20Nicol%C3%A1s!5e0!3m2!1ses-419!2sar!4v1713280987154!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -238,7 +258,7 @@
     <footer class="bg-[#3A4B66] mt-12">
         <div class="w-full max-w-screen-lg mx-auto ">
             <div class="flex items-center justify-around ml-6 mr-6">
-                <a href="../index.html" class="flex items-center">
+                <a href="../../index.html" class="flex items-center">
                     <img src="../../public/logo/CentralAvApart-removebg-preview.png" class="h-32 w-32"
                         alt="Central Av Logo" />
                 </a>
