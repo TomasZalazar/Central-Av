@@ -40,7 +40,7 @@
             </ul>
     </nav>
 
-    <header id="section5" class="bg-img-3 h-screen w-full  sm:bg-no-repeat lg:bg-cover ">
+    <header id="section5" class="bg-img-3 h-screen w-full sm:bg-no-repeat">
         <div
             class="text-container w-full bg-black bg-opacity-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white h-screen flex flex-col justify-center items-center px-16 gap-y-10 ">
             <h1
@@ -75,29 +75,28 @@
                 <h3 class="text-4xl md:text-5xl font-bold text-gray-800 text-center m-5">Galeria de fotos</h3>
             </div>
             <div class="gallery relative md:h-[450px] " id="imageGallery">
-                <img src="../../public/img/SanNicolas/cocinaSanNicolas.webp" alt="Habitacion" >
+                <img src="../../public/img/SanNicolas/habSanNicolas.webp" alt="Cocina" class="w-full shadow-md cursor-pointer">
+                <img src="../../public/img/SanNicolas/cocinaSanNicolas.webp" alt="Habitacion" class="w-full shadow-md cursor-pointer hidden" >
                 <img src="../../public/img/SanNicolas/cocinaSanNicolas2.webp" alt="Habitación" class="w-full shadow-md cursor-pointer hidden">
                 <img src="../../public/img/SanNicolas/livingSanNicolas.webp" alt="Desayuno" class="w-full shadow-md cursor-pointer hidden">
                 <img src="../../public/img/SanNicolas/sillonSanNicolas.webp" alt="Toallas" class="w-full shadow-md cursor-pointer hidden">
                 <img src="../../public/img/SanNicolas/bañoSanNicolas.webp" alt="Baño" class="w-full shadow-md cursor-pointer hidden">
                 <img src="../../public/img/SanNicolas/bañoSanNicolas2.webp" alt="Vino" class="w-full shadow-md cursor-pointer hidden">
-                <img src="../../public/img/SanNicolas/habSanNicolas.webp" alt="Cocina" class="w-full shadow-md cursor-pointer hidden">
                 <img src="../../public/img/SanNicolas/habSanNicolas2.webp" alt="Living" class="w-full shadow-md cursor-pointer hidden">
-                <img src="../../public/img/CentralAv/sabanas.webp" alt="Living" class="w-full shadow-md cursor-pointer hidden">
-                <img src="../../public/img/CentralAv/toallas.webp" alt="Living" class="w-full shadow-md cursor-pointer hidden">
                 <img src="../../public/img/SanNicolas/balconSanNicolas.webp" alt="Living" class="w-full shadow-md cursor-pointer hidden">
                 <img src="../../public/img/SanNicolas/frente.webp" alt="Living" class="w-full shadow-md cursor-pointer hidden">
                 <button onclick="showPreviousImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-[61px] text-[#406aaf]  rounded"><</button>
                 <button onclick="showNextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-[61px]  text-[#406aaf]  rounded">></button>
             </div>
             <div class="thumbnails flex flex-wrap mt-4">
-                <img src="../../public/img/CentralAv/sabanas.webp" alt="Comedor" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(0)">
-                <img src="../../public/img/CentralAv/desayuno.webp" alt="Habitación" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(2)">
-                <img src="../../public/img/CentralAv/toallas.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(3)">
-                <img src="../../public/img/CentralAv/baño1.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(4)">
-                <img src="../../public/img/CentralAv/vino.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(5)">
-                <img src="../../public/img/CentralAv/frentecocina.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(6)">
-                <img src="../../public/img/CentralAv/living.webp" alt="Living" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(7)">
+                
+                <img src="../../public/img/SanNicolas/bañoSanNicolas.webp" alt="Habitación" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(5)">
+                <img src="../../public/img/SanNicolas/cocinaSanNicolas.webp" alt="Habitación" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(3)">
+                <img src="../../public/img/SanNicolas/habSanNicolas.webp" alt="Habitación" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(4)">
+                <img src="../../public/img/SanNicolas/habSanNicolas2.webp" alt="Habitación" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(7)">
+                <img src="../../public/img/SanNicolas/cocinaSanNicolas2.webp" alt="Habitación" class="w-12 h-auto cursor-pointer mr-2" onclick="showImage(6)">
+
+
             </div>
 
         
@@ -109,11 +108,11 @@
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mt-5">Descripcion</h2>
                 <div class="w-full p-4 text-justify overflow-auto">
                     <p class="text-gray-600 mb-3">
-                        Bienvenido a San Nicolas Apart. Este encantador apart es el lugar perfecto para una escapada romántica o una estancia cómoda para dos personas en San Juan.
+                        Bienvenido a San Nicolas Apart. Este encantador apart es el lugar perfecto para una escapada romántica o una estancia cómoda hasta 3 personas en San Juan.
                     </p>
                     
                     <p class="text-gray-600 mb-3">
-                        El departamento cuenta con una cama matrimonial, armario y mueble, ofreciéndote un espacio íntimo y acogedor para descansar y relajarte. Posee baño con secador de pelo incluido la cual te brindará todas las comodidades que necesitas durante tu estancia.
+                        El departamento cuenta con una cama matrimonial y sofa cama, ofreciéndote un espacio íntimo y acogedor para descansar y relajarte. Posee baño con secador de toallas para brindarles todas las comodidades que necesitan durante su estancia.
                     </p>
                     
                     <p class="text-gray-600 mb-3">
@@ -121,7 +120,7 @@
                     </p>
                     
                     <p class="text-gray-600 mb-3">
-                        Disfruta de entretenimiento con su Smart TV y accede a tus programas favoritos a través del servicio de cable incluido. Mantente conectado con Wi-fi gratuito disponible en todo el departamento.
+                        Disfruta de entretenimiento con su Smart TV con Flow y accede a tus programas favoritos. Mantente conectado con fibra optica de alta velocidad.
                     </p>
                     
                     <p class="text-gray-600 mb-3">
@@ -204,22 +203,6 @@
                     <ul class="flex flex-col gap-4 md:m-auto md:gap-8 my-2 ">
                         <li class=" flex flex-col">
                             <div class="flex">
-                                <span class="material-symbols-outlined" style="font-size: 50px; color: #3A4B66;">
-                                    person
-                                </span>
-                                <p class="flex items-center ml-4 text-gray-600">Ariel Seferian</p>
-                            </div>
-                        </li>
-                        <li class=" flex flex-col">
-                            <div class="flex">
-                                <span class="material-symbols-outlined" style="font-size: 40px; color: #3A4B66;">
-                                    mail
-                                </span>
-                                <p class="flex ml-4 text-gray-600">ArielSeferian@gmail.com</p>
-                            </div>
-                        </li>
-                        <li class=" flex flex-col">
-                            <div class="flex">
                                 <a href="https://wa.me/2645184546" target="_blank">
                                     <img class="w-8 h-8" src="../../public/logo/logo-wsp1.webp" alt="logo whatsapp">
                                 </a>
@@ -231,7 +214,7 @@
                                 <span class="material-symbols-outlined"  style="font-size: 40px; color: #3A4B66;">
                                     location_on
                                     </span>
-                                <p class="flex ml-4 text-gray-600">Av. José Ignacio de la Roza Oeste 431, J5400 San Juan</p>
+                                <p class="flex ml-4 text-gray-600">Adán Quiroga Sur 1020, J5400 San Juan</p>
                             </div>
                         </li>
                     </ul>
@@ -263,8 +246,9 @@
             </div>
             <hr class=" border-gray-200 sm:mx-auto stroke-neutral-50:border-gray-700 mb-4" />
             <span
-                class="flex justify-center items-center text-xs text-stone-50 sm:text-center pb-5 hover:underline">©
-                2023 TOMAS-GONZALO™. All Rights Reserved.</span>
+                class="flex justify-center items-center text-xs text-stone-50 sm:text-center pb-5 hover:underline">
+                <a href="https://gonzamiguel.github.io/portfolio/" target="_blank">© 2024 Gonzalo Miguel. Todos los derechos reservados.</a> 
+            </span>
         </div>
     </footer>
     <script src="../utils/BurgerButton.js"></script>

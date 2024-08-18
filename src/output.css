@@ -1276,7 +1276,7 @@ video {
 
 .bg-img-3 {
   position: relative;
-  background: url(../public/img/SanNicolas/headerSan.jpeg) center/cover no-repeat;
+  background: url(../public/img/SanNicolas/headerSanNicolas.jpeg) center/cover no-repeat;
 }
 
 @media screen and (max-width: 767px) {
